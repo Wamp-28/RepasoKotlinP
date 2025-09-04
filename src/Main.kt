@@ -120,5 +120,33 @@ fun main() {
 
     }
 */
+    // WHILE
+
+    var z = 1
+
+    while (z<=100){
+
+        println(z)
+        z+=1
+
+    }
+
+
+    // do while
+
+    var m = 100
+
+    do{
+
+        println(m)
+        m--
+
+    }while (m>=1)
+
+
+
+
+
+
 
 }
