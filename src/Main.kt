@@ -1,31 +1,29 @@
 fun main() {
 
     /*
-        =====================================================
-        1. COMENTARIOS EN KOTLIN
-        =====================================================
+        ============================================
+        1. COMENTARIOS
+        ============================================
     */
 
     // Comentario de una sola línea
 
     /*
         Comentario
-        de varias
-        líneas
+        de varias líneas
     */
 
 
     /*
-        =====================================================
-        2. MOSTRAR INFORMACIÓN EN CONSOLA
-        =====================================================
+        ============================================
+        2. SALIDA POR CONSOLA
+        ============================================
     */
 
     println("HOLA MUNDO")
 
     println("Bienvenidos al repaso de Kotlin")
 
-    // print NO hace salto de línea
     print("Hola ")
     print("Estudiantes")
 
@@ -33,13 +31,13 @@ fun main() {
 
 
     /*
-        =====================================================
+        ============================================
         3. VARIABLES Y CONSTANTES
-        =====================================================
+        ============================================
     */
 
-    // var -> variable que puede cambiar
-    // val -> dato que no puede cambiar
+    // var -> puede cambiar
+    // val -> no puede cambiar
 
     var edad = 20
 
@@ -48,27 +46,15 @@ fun main() {
     println("Edad: $edad")
     println("PI: $pi")
 
-
-    /*
-        Podemos modificar una variable creada con var.
-    */
-
     edad = 25
 
     println("Nueva edad: $edad")
 
 
     /*
-        Esto produciría error porque pi fue creado con val:
-
-        pi = 4.5
-    */
-
-
-    /*
-        =====================================================
-        4. TIPOS DE DATOS
-        =====================================================
+        ============================================
+        4. TIPOS DE DATOS EXPLÍCITOS
+        ============================================
     */
 
     var numeroEntero: Int = 50
@@ -79,7 +65,7 @@ fun main() {
 
     var letra: Char = 'A'
 
-    var estado: Boolean = true
+    var activo: Boolean = true
 
 
     println("Número entero: $numeroEntero")
@@ -90,16 +76,13 @@ fun main() {
 
     println("Letra: $letra")
 
-    println("Estado: $estado")
+    println("Activo: $activo")
 
 
     /*
-        =====================================================
-        5. TIPO IMPLÍCITO
-        =====================================================
-
-        Kotlin puede reconocer automáticamente el tipo
-        de dato.
+        ============================================
+        5. TIPOS DE DATOS IMPLÍCITOS
+        ============================================
     */
 
     var numero = 100
@@ -108,7 +91,7 @@ fun main() {
 
     var texto = "Aprendiendo Kotlin"
 
-    var activo = true
+    var estado = true
 
 
     println(numero)
@@ -117,13 +100,13 @@ fun main() {
 
     println(texto)
 
-    println(activo)
+    println(estado)
 
 
     /*
-        =====================================================
-        6. CONCATENACIÓN E INTERPOLACIÓN
-        =====================================================
+        ============================================
+        6. INTERPOLACIÓN DE VARIABLES
+        ============================================
     */
 
     var estudiante = "Laura"
@@ -131,22 +114,17 @@ fun main() {
     var semestre = 3
 
 
-    // Concatenación
-    println("Estudiante: " + estudiante)
-
-
-    // Interpolación
     println("Estudiante: $estudiante")
 
+    println("Semestre: $semestre")
 
-    // También podemos hacer operaciones dentro de ${}
     println("Próximo semestre: ${semestre + 1}")
 
 
     /*
-        =====================================================
+        ============================================
         7. TEXTO DE VARIAS LÍNEAS
-        =====================================================
+        ============================================
     */
 
     println(
@@ -164,9 +142,9 @@ fun main() {
 
 
     /*
-        =====================================================
+        ============================================
         8. OPERADORES ARITMÉTICOS
-        =====================================================
+        ============================================
     */
 
     var a = 20
@@ -186,9 +164,9 @@ fun main() {
 
 
     /*
-        =====================================================
-        9. INGRESAR DATOS POR TECLADO
-        =====================================================
+        ============================================
+        9. ENTRADA DE DATOS
+        ============================================
     */
 
     print("Ingrese su nombre: ")
@@ -211,27 +189,24 @@ fun main() {
     var suma = n1 + n2
 
 
-    println(
-        "La suma de $n1 y $n2 es: $suma"
-    )
+    println("La suma de $n1 y $n2 es: $suma")
 
 
     /*
-        =====================================================
-        10. CONVERSIONES DE DATOS
-        =====================================================
+        ============================================
+        10. CONVERSIÓN DE DATOS
+        ============================================
     */
 
     var textoNumero = "100"
 
     var numeroConvertido = textoNumero.toInt()
 
-
     println(numeroConvertido)
 
 
     /*
-        Otras conversiones importantes:
+        Conversiones comunes:
 
         toInt()
         toDouble()
@@ -241,20 +216,10 @@ fun main() {
 
 
     /*
-        =====================================================
+        ============================================
         11. OPERADORES DE COMPARACIÓN
-        =====================================================
+        ============================================
     */
-
-    /*
-        >   mayor que
-        <   menor que
-        >=  mayor o igual
-        <=  menor o igual
-        ==  igual
-        !=  diferente
-    */
-
 
     var x = 10
 
@@ -271,17 +236,10 @@ fun main() {
 
 
     /*
-        =====================================================
+        ============================================
         12. OPERADORES LÓGICOS
-        =====================================================
+        ============================================
     */
-
-    /*
-        &&  AND
-        ||  OR
-        !   NOT
-    */
-
 
     var edadPersona = 25
 
@@ -296,9 +254,9 @@ fun main() {
 
 
     /*
-        =====================================================
-        13. CONDICIONAL IF
-        =====================================================
+        ============================================
+        13. IF
+        ============================================
     */
 
     var numeroEvaluar = 25
@@ -312,9 +270,9 @@ fun main() {
 
 
     /*
-        =====================================================
+        ============================================
         14. IF - ELSE
-        =====================================================
+        ============================================
     */
 
     var nota = 4.0
@@ -332,9 +290,9 @@ fun main() {
 
 
     /*
-        =====================================================
+        ============================================
         15. IF - ELSE IF - ELSE
-        =====================================================
+        ============================================
     */
 
     var numeroValidar = -10
@@ -356,11 +314,9 @@ fun main() {
 
 
     /*
-        =====================================================
+        ============================================
         16. WHEN
-        =====================================================
-
-        when es parecido al switch de otros lenguajes.
+        ============================================
     */
 
     var opcion = 2
@@ -370,25 +326,25 @@ fun main() {
 
         1 -> {
 
-            println("Seleccionó registrar")
+            println("Registrar")
 
         }
 
         2 -> {
 
-            println("Seleccionó consultar")
+            println("Consultar")
 
         }
 
         3 -> {
 
-            println("Seleccionó modificar")
+            println("Modificar")
 
         }
 
         4 -> {
 
-            println("Seleccionó salir")
+            println("Salir")
 
         }
 
@@ -401,9 +357,9 @@ fun main() {
 
 
     /*
-        =====================================================
+        ============================================
         17. FOR
-        =====================================================
+        ============================================
     */
 
     println("FOR ASCENDENTE")
@@ -417,9 +373,9 @@ fun main() {
 
 
     /*
-        =====================================================
+        ============================================
         18. FOR DESCENDENTE
-        =====================================================
+        ============================================
     */
 
     println("FOR DESCENDENTE")
@@ -433,9 +389,9 @@ fun main() {
 
 
     /*
-        =====================================================
+        ============================================
         19. FOR CON STEP
-        =====================================================
+        ============================================
     */
 
     println("NÚMEROS DE 2 EN 2")
@@ -449,15 +405,15 @@ fun main() {
 
 
     /*
-        =====================================================
+        ============================================
         20. WHILE
-        =====================================================
+        ============================================
     */
 
     var contador = 1
 
 
-    while (contador <= 10) {
+    while (contador <= 5) {
 
         println(contador)
 
@@ -467,9 +423,9 @@ fun main() {
 
 
     /*
-        =====================================================
+        ============================================
         21. DO WHILE
-        =====================================================
+        ============================================
     */
 
     var contador2 = 1
@@ -481,42 +437,45 @@ fun main() {
 
         contador2++
 
-    } while (contador2 <= 10)
+    } while (contador2 <= 5)
 
 
     /*
-        =====================================================
+        ============================================
         22. FUNCIONES
-        =====================================================
+        ============================================
     */
 
     saludar()
 
 
     /*
-        =====================================================
+        ============================================
         23. FUNCIÓN CON PARÁMETROS
-        =====================================================
+        ============================================
     */
 
     saludarPersona("Pedro")
 
 
     /*
-        =====================================================
+        ============================================
         24. FUNCIÓN QUE RETORNA UN VALOR
-        =====================================================
+        ============================================
     */
 
-    var resultado = sumar(10, 5)
+    var resultadoSuma = sumar(
+        10,
+        5
+    )
 
-    println("Resultado función: $resultado")
+    println("Resultado: $resultadoSuma")
 
 
     /*
-        =====================================================
+        ============================================
         25. FUNCIÓN CON WHEN
-        =====================================================
+        ============================================
     */
 
     var resultadoOperacion = calcular(
@@ -529,13 +488,209 @@ fun main() {
         "Resultado calculadora: $resultadoOperacion"
     )
 
+
+    /*
+        ============================================
+        26. LISTAS
+        ============================================
+    */
+
+    val nombres = mutableListOf<String>()
+
+    nombres.add("Carlos")
+
+    nombres.add("Laura")
+
+    nombres.add("Pedro")
+
+
+    println("LISTA DE NOMBRES")
+
+
+    for (nombreLista in nombres) {
+
+        println(nombreLista)
+
+    }
+
+
+    /*
+        ============================================
+        27. DATA CLASS
+        ============================================
+
+        Una data class sirve para representar
+        información y crear objetos.
+    */
+
+
+    val estudiante1 = Estudiante(
+        nombre = "Carlos",
+        programa = "Ingeniería de Sistemas",
+        semestre = 3,
+        promedio = 4.2
+    )
+
+
+    val estudiante2 = Estudiante(
+        nombre = "Laura",
+        programa = "Ingeniería Industrial",
+        semestre = 2,
+        promedio = 2.8
+    )
+
+
+    /*
+        ============================================
+        28. ACCEDER A LOS DATOS DEL OBJETO
+        ============================================
+    */
+
+    println("ESTUDIANTE 1")
+
+    println("Nombre: ${estudiante1.nombre}")
+
+    println("Programa: ${estudiante1.programa}")
+
+    println("Semestre: ${estudiante1.semestre}")
+
+    println("Promedio: ${estudiante1.promedio}")
+
+
+    /*
+        ============================================
+        29. USAR OBJETOS EN CONDICIONES
+        ============================================
+    */
+
+    if (estudiante1.promedio >= 3.0) {
+
+        println("${estudiante1.nombre} APROBÓ")
+
+    } else {
+
+        println("${estudiante1.nombre} REPROBÓ")
+
+    }
+
+
+    /*
+        ============================================
+        30. LISTA DE OBJETOS
+        ============================================
+    */
+
+    val estudiantes = mutableListOf<Estudiante>()
+
+
+    estudiantes.add(estudiante1)
+
+    estudiantes.add(estudiante2)
+
+
+    /*
+        También podemos crear y agregar
+        el objeto directamente.
+    */
+
+    estudiantes.add(
+        Estudiante(
+            nombre = "Ana",
+            programa = "Administración",
+            semestre = 1,
+            promedio = 3.8
+        )
+    )
+
+
+    /*
+        ============================================
+        31. RECORRER LISTA DE OBJETOS
+        ============================================
+    */
+
+    println()
+    println("ESTUDIANTES REGISTRADOS")
+
+
+    for (estu in estudiantes) {
+
+        println("-------------------------")
+
+        println("Nombre: ${estu.nombre}")
+
+        println("Programa: ${estu.programa}")
+
+        println("Semestre: ${estu.semestre}")
+
+        println("Promedio: ${estu.promedio}")
+
+    }
+
+
+    /*
+        ============================================
+        32. CONDICIÓN CON LISTA DE OBJETOS
+        ============================================
+    */
+
+    println()
+    println("ESTADO DE LOS ESTUDIANTES")
+
+
+    for (estu in estudiantes) {
+
+        if (estu.promedio >= 3.0) {
+
+            println("${estu.nombre}: APROBÓ")
+
+        } else {
+
+            println("${estu.nombre}: REPROBÓ")
+
+        }
+
+    }
+
+
+    /*
+        ============================================
+        33. BUSCAR UN OBJETO
+        ============================================
+    */
+
+    print("Ingrese el nombre del estudiante a buscar: ")
+
+    val nombreBuscar = readln()
+
+
+    for (estu in estudiantes) {
+
+        if (estu.nombre.equals(
+                nombreBuscar,
+                ignoreCase = true
+            )
+        ) {
+
+            println("ESTUDIANTE ENCONTRADO")
+
+            println("Nombre: ${estu.nombre}")
+
+            println("Programa: ${estu.programa}")
+
+            println("Promedio: ${estu.promedio}")
+
+        }
+
+    }
+
 }
 
 
 /*
-    =====================================================
+    ============================================
     FUNCIONES
-    =====================================================
+    ============================================
 */
 
 
@@ -546,7 +701,9 @@ fun saludar() {
 }
 
 
-fun saludarPersona(nombre: String) {
+fun saludarPersona(
+    nombre: String
+) {
 
     println("Hola $nombre")
 
@@ -577,9 +734,38 @@ fun calcular(
 
         "*" -> numero1 * numero2
 
-        "/" -> numero1 / numero2
+        "/" -> {
+
+            if (numero2 != 0.0) {
+
+                numero1 / numero2
+
+            } else {
+
+                0.0
+            }
+        }
 
         else -> 0.0
 
     }
 }
+
+
+/*
+    ============================================
+    DATA CLASS
+    ============================================
+*/
+
+data class Estudiante(
+
+    val nombre: String,
+
+    val programa: String,
+
+    val semestre: Int,
+
+    val promedio: Double
+
+)
